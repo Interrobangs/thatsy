@@ -19,6 +19,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "now": {
+    "name": "thatsy",
+    "alias": "dataz.direct"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

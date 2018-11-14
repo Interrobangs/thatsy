@@ -5,24 +5,24 @@ import './App.css'
 
 document.title = 'thatsY'
 
-const initialCount = Math.PI
+const initialValue = Math.PI
 const initialHistoryItems = []
 
 function App() {
-  const [value, setValue] = useState(initialCount)
+  const [value, setValue] = useState(initialValue)
   const [items, setItems] = useState(initialHistoryItems)
   return (
     <div class="buttons">
-      <p>You've earned {value} pies</p>
+      <p>You've earned {Math.round(value)} pies</p>
       <ActionButton
         action={() => {
           setItems([...items, value])
-          setValue(value * initialCount)
+          setValue(value * initialValue)
         }}
-        label="Click"
+        label="Work"
       />
       <ActionButton
-        action={() => setValue(initialCount) & setItems(initialHistoryItems)}
+        action={() => setValue(initialValue) & setItems(initialHistoryItems)}
         label="Reset"
       />
       <History items={items} />

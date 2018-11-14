@@ -12,16 +12,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build & now build & now alias",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "now": {
-    "name": "thatsy",
-    "alias": "dataz.direct"
   },
   "browserslist": [
     ">0.2%",
